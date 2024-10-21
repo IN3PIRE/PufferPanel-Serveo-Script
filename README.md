@@ -1,5 +1,4 @@
-
-# PufferPanel-Serveo-Script
+# PufferPanel-Serveo-Script (Ubuntu)
 
 **Owner:** IN3PIRE
 
@@ -16,7 +15,7 @@ This script streamlines the entire process of getting a PufferPanel server up an
 
 ## Prerequisites
 
-* **Node.js:** You need to have Node.js installed on your server. [https://nodejs.org/](https://nodejs.org/)
+* **apt-get:** You need to have `apt-get` installed on your Ubuntu server.
 * **Serveo:** You need to have Serveo installed and configured. [https://serveo.net/](https://serveo.net/)
 
 ## Installation
@@ -26,17 +25,16 @@ This script streamlines the entire process of getting a PufferPanel server up an
    git clone https://github.com/IN3PIRE/PufferPanel-Serveo-Script.git
    ```
 
-2. **Install Dependencies:**
+2. **Make the Script Executable:**
    ```bash
-   cd PufferPanel-Serveo-Script
-   npm install
+   chmod +x start.sh
    ```
 
 ## Usage
 
 1. **Run the Script:**
    ```bash
-   node index.js
+   ./start.sh
    ```
 
 2. **Provide Admin Credentials:**
@@ -74,4 +72,3 @@ Contributions are welcome! Feel free to open issues or pull requests.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
