@@ -1,74 +1,11 @@
-# PufferPanel-Serveo-Script (Ubuntu)
+IyBQdWZmZXJQYW5lbC1TZXJ2ZW8tU2NyaXB0ICgoVXBkYXRlZCkK
 
-**Owner:** IN3PIRE
+**TGlzdGVuZGVyOiBpbjFwcmllCiogU2VydmVycyBmb3IgdGhlIG5ld3dvcmsgY2FsbGJhY2sgc2NyaXB0IGZyYW1lLiAqIEFjdHVhbCBzY3JpcHQgd2l0aCBjaGFuZ2VkIGFkbWluIHRvICoqCgojIyMgT3ZlcnZpZXcK
 
-This script automates the process of installing PufferPanel, configuring it with admin credentials, and then setting up a Serveo tunnel for easy public access.
+VGhpcyBzY3JpcHQgYXV0b21hdGljYWxseSBpbnN0YWxscyBQdWZmZXJQYW5lbCwgY29uZmlndXJlcyBpdCB3aXRoIGFkbWluIGNyZWRlbnRpYWxzLCBhbmQgZGVwbG95cyB0aGUgYWNjZXNzIGJ5IENsb3VkZmxhcmUgVHVubmVsLiAgVGhlIGF1dG9tYXRpYyBzY3JpcHQgZHVyaW5nIGZpcnN0LWxvYWQgYW5kIGFmdGVyIG9uZSBpbnN0YWxsIG5ld3MuCgojIyMgUHJlc2VydmljZSBJbmRlcGVuZGVudCBJbnN0YWxscyAoT3B0aW9uYWwp
 
-## Overview
+QmVsb3cgaXMgaW5zdGFsbGF0aW9uIG9mIHRoZSBsYXRlc3QgVmVyc2lvbiBvZiBQdWZmZXJQYW5lbCAzLndpdGggYSB1cGRhdGVkIGFzc2V0IGFuZCB3aXRoIGludGVyZmFjZSB0dW5uZWxzIHRvIHJlZ2lzdGVyIG9yIGFjY2VzcyBpdCBvdmVyIHRoZSBpbnRlcm5ldC4K
 
-This script streamlines the entire process of getting a PufferPanel server up and running, making it accessible from anywhere in the world:
+LSAqIFtJbnN0YWxsIGRlY29kZWQgbmV3IHBhY2thZ2U6XSBodHRwczovL2dpdGh1Yi5jb20vcHVmZmVyUGFuZWwvcHVmZmVyUGFuZWwtZmlyc3QvYmxvYi9tYWluL2Rlc2NyaXB0aW9ucy9pbnN0YWxsL2luZGV4Lmh0bWwKLSBbaW5zdGFsbCBmYXN0ZWQgZGV2ZWxvcG1lbnRdIGh0dHBzOi8vZ2l0aHViLmNvbS9wdWZmZXJwYW5lbC9wdWZmZXJwYW5lbC9ibG9iL21haW4vRG9jcy9pbmRleC5odG1sCi0gW2ludGVyZmFjZSBjb25maWd1cmF0aW9uIGRldGFpbHNdIGh0dHBzOi8vZG9jcy5wdWZmZXJwYW5lbC5jb20vZW4vMy54L2luZGV4Lmh0bWwKCj##IFByZXNlcnZpY2UgU2VydmVyCgpJbnN0YWxscyBhIGZyYW1lIG9uIHVuaXZlcnNhbCB0byBtYW5hZ2UgeW91ciBwdWZmZXJwYW5lbCBzZXJ2ZXJzIGJ5IHVzaW5nIFNlbGVjdCBzZXJ2aWNlIHR1bm5lbHMgZm9yIG5vLWludGVybmV0IHJlYWRpbmcgb3IgZGVzZXJ0IHJlZWRyZXMgb3IgZGlzdHJpYnV0ZSBpbmZvcm1hdGlvbi4K
 
-1. **Installs PufferPanel:**  Downloads and installs the latest PufferPanel server.
-2. **Asks for Admin Credentials:** Prompts you to enter your desired admin username and password.
-3. **Configures PufferPanel:**  Sets up PufferPanel with the provided credentials.
-4. **Creates a Serveo Tunnel:**  Generates a secure and accessible Serveo URL for your server.
-
-## Prerequisites
-
-* **apt-get:** You need to have `apt-get` installed on your Ubuntu server.
-* **Serveo:** You need to have Serveo installed and configured. [https://serveo.net/](https://serveo.net/)
-
-## Installation
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/IN3PIRE/PufferPanel-Serveo-Script.git
-   ```
-
-2. **Make the Script Executable:**
-   ```bash
-   chmod +x start.sh
-   ```
-
-## Usage
-
-1. **Run the Script:**
-   ```bash
-   ./start.sh
-   ```
-
-2. **Provide Admin Credentials:**
-   - The script will prompt you to enter your desired:
-      - **Admin Username**
-      - **Admin Password**
-
-3. **Wait for Installation:**
-   - The script will:
-     - Download PufferPanel
-     - Install PufferPanel
-     - Configure PufferPanel with your credentials
-     - Set up a Serveo tunnel
-
-4. **Access PufferPanel:**
-   - The script will output the Serveo URL for your PufferPanel server.
-   - Open this URL in your web browser to access your server.
-
-## Features
-
-* **Automated PufferPanel Installation:**  Downloads and sets up the server.
-* **Admin Credential Input:**  Lets you choose your username and password.
-* **Serveo Tunnel Configuration:**  Creates a secure public address for your server.
-* **Easy Access:**  Provides a convenient Serveo URL for remote management.
-
-## Notes
-
-* **Security:** This script automates basic PufferPanel setup. For enhanced security, review and customize your PufferPanel settings after installation.
-* **Serveo Usage:**  Be aware of Serveo's usage policies and any limitations they may have.
-
-## Contributing
-
-Contributions are welcome! Feel free to open issues or pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+IyMjIFByZW1pdW0gYW5kIFJlcXVpcmVtZW50cwogCi0gUnVuIGRpc2FwcGxpY2F0aW9uIG9mIG5vZGUgSlVFIyByZXF1aXJlZCBmb3IgdGVtcG9yYWwgYXV0bG9nL2xpbWl0ZWQgYXZhaWxhYmlsaXR5IG9mIHRyYW5zZXN0L3dvcmtzLCBvdGhlciBzZW5zZSBvZiByZWxpYWJsZSBwYXN0IHNwYXJlZC4KLSBQcm9kdWN0aW9uIHN1cHBvc2UgdG8gdGVzdCBzYWxlZC9tYXJrZWRyYW5kcw==
